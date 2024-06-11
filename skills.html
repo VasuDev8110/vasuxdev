@@ -9,14 +9,14 @@
 </head>
 <body>
     
-    <div class="container">
+    <div class="container max-w-full">
         <header>
             <h1 class="text-4xl mt-7 ml-9 font-semibold font-mono bg-opacity-10 h-12 w-56 flex justify-center items-center rounded-2xl hover:shadow-3xl hover:bg-gray-800">
                 Skills: 
             </h1>
         </header>
 
-        <div class="cards flex flex-wrap ">
+        <div class="cards flex flex-wrap">
             <div class="card w-96 bg-base-100 hover:shadow-3xl hover:bg-gray-800">
                 <figure class="px-10 pt-10">
                   <img src="./images/py.png" alt="Shoes" class="rounded-xl" />
@@ -356,5 +356,23 @@
         width: calc(25% - 20px); /* Calculate width for 4 boxes per row with 20px margin */
     margin: 10px; /* Adjust margin as needed */
     }
+    @media (max-width: 1024px) {
+  /* Styles for small screens */
+  .cards {
+    flex-direction: column;
+    justify-content: center; /* Make cards stack vertically */
+    align-items: center; /* Center cards horizontally */
+  }
+  .container {
+    padding: 1rem 36px 1rem 1rem;
+  }
+
+  .card {
+    width: 100%; /* Make cards take up full width */
+    margin-bottom: 20px;
+    margin-right: 2%; /* Add spacing between cards */
+  }
+}
+
  </style>
 </html>
