@@ -1,34 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="src/output.css">
-    <link rel="icon" href="/images/google-gemini-icon.png">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/output.css" />
+    <link rel="icon" href="/images/google-gemini-icon.png" />
     <title>spiteimagine - stats</title>
-    <link rel="icon" href="/images/google-gemini-icon.png">
+    <link rel="icon" href="/images/google-gemini-icon.png" />
     <style>
+      .gradient-bg {
+        background: linear-gradient(
+          to right,
+          #e326ba,
+          #4219d6
+        ); /* Replace with your desired gradient colors */
+        color: white; /* Set text color to white or any other color that contrasts well with the gradient */
+      }
 
-.gradient-bg {
-    background: linear-gradient(to right, #e326ba, #4219d6); /* Replace with your desired gradient colors */
-    color: white; /* Set text color to white or any other color that contrasts well with the gradient */
-}
+      .circle {
+        height: 10px;
+        width: 10px;
+        border-radius: 24px;
+        background-color: black;
+        position: fixed;
+        top: 0;
+        left: 0;
+        pointer-events: none;
+        z-index: 99999999; /* so that it stays on top of all other elements */
+      }
 
-.circle {
-  height: 10px;
-  width: 10px;
-  border-radius: 24px;
-  background-color: black;
-  position: fixed; 
-  top: 0;
-  left: 0;
-  pointer-events: none;
-  z-index: 99999999; /* so that it stays on top of all other elements */
-}
-
+      .lmao {
+        margin-top: -27%;
+      }
+      #particles-js {
+        height: 729px;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="circle"></div>
     <div class="circle"></div>
     <div class="circle"></div>
@@ -50,124 +59,119 @@
     <div class="circle"></div>
     <div class="circle"></div>
 
-    <div class="flex justify-center items-center h-screen">
-        <div class="stats shadow-2xl gradient-bg">
-    
-            <div class="stat">
-            <div class="stat-figure text-primary">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-8 h-8 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
-            </div>
-            <div class="stat-title text-black">Total Projects</div>
-            <div class="stat-value text-primary">129</div>
-            <div class="stat-desc text-black">21% more than last month</div>
-            </div>
-            
-            <div class="stat ">
-            <div class="stat-figure text-secondary">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" class="inline-block w-8 h-8 stroke-current"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
-            </div>
-            <div class="stat-title text-black ">Page Views</div>
-            <div class="stat-value text-secondary">32K</div>
-            <div class="stat-desc text-black">12% more than last month</div>
-            </div>  
-            
-            <div class="stat ">
-            <div class="stat-figure text-secondary">
-                <div class="avatar online">
-                <div class="w-16 rounded-full">
-                    <img src="images/vision.jpg" />
-                </div>
-                </div>
-            </div>
-            <div class="stat-value">86%</div>
-            <div class="stat-title text-black ">Tasks done</div>
-            <div class="stat-desc text-black ">3 tasks remaining</div>
-            </div>
-            
+    <div id="particles-js"></div>
+    <div class="lmao flex justify-center items-center flex-col">
+      <div class="stats shadow-2xl gradient-bg">
+        <div class="stat">
+          <div class="stat-figure text-primary">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              class="inline-block w-8 h-8 stroke-current"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+              ></path>
+            </svg>
+          </div>
+          <div class="stat-title text-black">Total Projects</div>
+          <div class="stat-value text-primary">129</div>
+          <div class="stat-desc text-black">21% more than last month</div>
         </div>
+
+        <div class="stat">
+          <div class="stat-figure text-secondary">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              class="inline-block w-8 h-8 stroke-current"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M13 10V3L4 14h7v7l9-11h-7z"
+              ></path>
+            </svg>
+          </div>
+          <div class="stat-title text-black">Page Views</div>
+          <div class="stat-value text-secondary">32K</div>
+          <div class="stat-desc text-black">12% more than last month</div>
+        </div>
+
+        <div class="stat">
+          <div class="stat-figure text-secondary">
+            <div class="avatar online">
+              <div class="w-16 rounded-full">
+                <img src="images/vision.jpg" />
+              </div>
+            </div>
+          </div>
+          <div class="stat-value">86%</div>
+          <div class="stat-title text-black">Tasks done</div>
+          <div class="stat-desc text-black">3 tasks remaining</div>
+        </div>
+      </div>
     </div>
-    
-    <div class="navbar fixed bottom-5 left-0 right-0 flex flex-col items-center justify-end">
-        <ul class="menu bg-base-200 lg:menu-horizontal rounded-box">
-            <li>
-            <a href="index.html">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" /></svg>
-                Home
-            </a>
-            </li>
-            <li>
-            <a href="skills.html">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
-                Skills
-                <span class="badge badge-sm badge-warning">NEW</span>
-            </a>
-            </li>
-            <li>
-            <a href="stats.html">
-                Stats
-                <span class="badge badge-xs badge-info"></span>
-            </a>
-            </li>
-        </ul>
-    </div> 
-    
-</body>
 
-<script>
-    const coords = { x: 0, y: 0 };
-const circles = document.querySelectorAll(".circle");
+    <div
+      class="navbar fixed bottom-5 left-0 right-0 flex flex-col items-center justify-end"
+    >
+      <ul class="menu bg-base-200 lg:menu-horizontal rounded-box">
+        <li>
+          <a href="index.html">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+              />
+            </svg>
+            Home
+          </a>
+        </li>
+        <li>
+          <a href="skills.html">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+              />
+            </svg>
+            Skills
+            <span class="badge badge-sm badge-warning">NEW</span>
+          </a>
+        </li>
+        <li>
+          <a href="stats.html">
+            Stats
+            <span class="badge badge-xs badge-info"></span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </body>
 
-const colors = [
-  "#0e035c",
-  "#24066b",
-  "#370a7b",
-  "#4a0f8a",
-  "#5d149a",
-  "#7118a9",
-  "#861cb8",
-  "#9b1fc7",
-  "#b022d5",
-  "#c725e4",
-  "#de27f2",
-  "#f529ff",
-
-];
-
-circles.forEach(function (circle, index) {
-  circle.x = 0;
-  circle.y = 0;
-  circle.style.backgroundColor = colors[index % colors.length];
-});
-
-window.addEventListener("mousemove", function(e){
-  coords.x = e.clientX;
-  coords.y = e.clientY;
-  
-});
-
-function animateCircles() {
-  
-  let x = coords.x;
-  let y = coords.y;
-  
-  circles.forEach(function (circle, index) {
-    circle.style.left = x - 12 + "px";
-    circle.style.top = y - 12 + "px";
-    
-    circle.style.scale = (circles.length - index) / circles.length;
-    
-    circle.x = x;
-    circle.y = y;
-
-    const nextCircle = circles[index + 1] || circles[0];
-    x += (nextCircle.x - x) * 0.3;
-    y += (nextCircle.y - y) * 0.3;
-  });
- 
-  requestAnimationFrame(animateCircles);
-}
-
-animateCircles();
-
-</script>
+  <script src="particles.js"></script>
+  <script src="app.js"></script>
 </html>

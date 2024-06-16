@@ -1,200 +1,285 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="src/output.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap">
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+    />
+
     <title>Vision Imagine - Home</title>
-    <link rel="icon" href="/images/google-gemini-icon.png">
+    <link rel="icon" href="/images/google-gemini-icon.png" />
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-        @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
-        .vision {
-            font-family: "Poppins", sans-serif;
-            line-height: 4rem;
-        }
-        .btn {
-          font-family: "JetBrains Mono", monospace;
-        }
-        .butn {
-          margin-left: -18px;
-        }
-        .circle {
-  height: 10px;
-  width: 10px;
-  border-radius: 24px;
-  background-color: black;
-  position: fixed; 
-  top: 0;
-  left: 0;
-  pointer-events: none;
-  z-index: 99999999; /* so that it stays on top of all other elements */
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap");
 
-  @media (min-width: 1000px) {
-    .container {
-      max-width: 100%;
-    }
-  }
-}
 
-        
+      .vision {
+        line-height: 4rem;
+        font-family: "Kalam", cursive;
+        font-size: 62px;
+        font-weight: 900;
+      }
+
+      #particles-js {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        /* z-index: 9; */
+      }
+      .noos {
+        position: relative;
+        z-index: 10;
+      }
+      .outer-1 {
+        position: relative;
+        z-index: 10;
+      }
+
+      .navbar {
+        z-index: 11;
+      }
+
+      .btn {
+        font-family: "JetBrains Mono", monospace;
+      }
+      .butn {
+        margin-left: -18px;
+      }
+      .circle {
+        height: 8px;
+        width: 8px;
+        border-radius: 24px;
+        background-color: black;
+        position: fixed;
+        top: 0;
+        left: 0;
+        pointer-events: none;
+        z-index: 99999999; /* so that it stays on top of all other elements */
+
+        @media (min-width: 1000px) {
+          .container {
+            max-width: 100%;
+          }
+        }
+      }
+      
     </style>
-</head>
-<body>
+  </head>
+  <body>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
+    <div class="circle"></div>
     
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="circle"></div>
-    <div class="circle"></div>
+    <div id="particles-js"></div>
 
-    
-    
     <div class="container">
+      <div class="hero min-h-screen bg-base-200">
+        <div
+          class="hero-content flex-col lg:flex-row-reverse items-center lg:mr-4 w-full justify-between"
+        >
+          <img
+            src="images/Screenshot 2024-05-31 174756.png"
+            class="noos max-w-sm rounded-lg shadow-2xl mb-4 lg:mb-0 lg:mr-4"
+          />
+          <!-- Added margin classes -->
+          <div class="outer-1">
+            <h1
+              class="vision text-5xl"
+              style="
+                background-image: linear-gradient(
+                  150deg,
+                  #0e035c,
+                  #24066b,
+                  #370a7b,
+                  #4a0f8a,
+                  #5d149a,
+                  #7118a9,
+                  #861cb8,
+                  #9b1fc7,
+                  #b022d5,
+                  #c725e4,
+                  #de27f2,
+                  #f529ff
+                );
+                -webkit-background-clip: text;
+                background-clip: text;
+                color: transparent;
+              "
+            >
+              Vision Imagine
+            </h1>
 
-        
-        <div class="hero min-h-screen bg-base-200">
-            <div class="hero-content flex-col lg:flex-row-reverse items-center lg:mr-4 w-full justify-between">
-                <img src="images/Screenshot 2024-05-31 174756.png" class="max-w-sm rounded-lg shadow-2xl mb-4 lg:mb-0 lg:mr-4" /> <!-- Added margin classes -->
-                <div>
-                    <h1 class="vision text-5xl font-mono font-bold" style="background-image: linear-gradient(150deg, #0e035c, #24066b, #370a7b, #4a0f8a, #5d149a, #7118a9, #861cb8, #9b1fc7, #b022d5, #c725e4, #de27f2, #f529ff); -webkit-background-clip: text; background-clip: text; color: transparent;">Vision Imagine</h1>
-
-                    <div class="mockup-code w-11 mt-7">
-                        <pre data-prefix="$"><code>developer @spiteimagine</code></pre>
-                      </div>
-                    <p class="font-mono py-6">I don't just code, I code coders. Vision Imagine: The future starts here.</p>
-                    <div class="butn">
-                        <a href="https://discordapp.com/users/1075101494375890995/" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg mb-4 lg:mb-0 lg:ml-4 font-Poppins font-bold">Discord</a>
-                        <a href="https://github.com/VasuDev8110" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg mb-4 lg:mb-0 lg:ml-4 font-Poppins font-bold">Github</a>
-                        <a href="https://discord.gg/S97paXUH" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg mb-4 lg:mb-0 lg:ml-4 font-Poppins font-bold">Server</a>
-                        <a href="skills.html" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-lg mb-4 lg:mb-0 lg:ml-4 font-Poppins font-bold">Skills</a>
-                    </div>
-                                        
-                    
-                </div>
+            <div class="mockup-code w-11 mt-7">
+              <pre data-prefix="$"><code>developer @spiteimagine</code></pre>
             </div>
+            <p class="font-mono py-6">
+              I don't just code, I code coders. Vision Imagine: The future
+              starts here.
+            </p>
+            <div class="butn">
+              <a
+                href="https://discordapp.com/users/1075101494375890995/"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-primary btn-lg mb-4 lg:mb-0 lg:ml-4 font-Poppins font-bold"
+                >Discord</a
+              >
+              <a
+                href="https://github.com/VasuDev8110"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-primary btn-lg mb-4 lg:mb-0 lg:ml-4 font-Poppins font-bold"
+                >Github</a
+              >
+              <a
+                href="https://discord.gg/S97paXUH"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-primary btn-lg mb-4 lg:mb-0 lg:ml-4 font-Poppins font-bold"
+                >Server</a
+              >
+              <a
+                href="skills.html"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-primary btn-lg mb-4 lg:mb-0 lg:ml-4 font-Poppins font-bold"
+                >Skills</a
+              >
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-    
-    
-    <div class="navbar fixed bottom-5 left-0 right-0 flex flex-col items-center justify-end">
-        <ul class="menu bg-base-200 lg:menu-horizontal rounded-box">
-            <li>
-            <a href="index.html">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" /></svg>
-                Home
-            </a>
-            </li>
-            <li>
-            <a href="skills.html">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
-                Skills
-                <span class="badge badge-sm badge-warning">NEW</span>
-            </a>
-            </li>
-            <li>
-            <a href="stats.html">
-                Stats
-                <span class="badge badge-xs badge-info"></span>
-            </a>
-            </li>
-        </ul>
-    </div> 
+
+    <div
+      class="navbar fixed bottom-5 left-0 right-0 flex flex-col items-center justify-end"
+    >
+      <ul class="menu bg-base-200 lg:menu-horizontal rounded-box">
+        <li>
+          <a href="index.html">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+              />
+            </svg>
+            Home
+          </a>
+        </li>
+        <li>
+          <a href="skills.html">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+              />
+            </svg>
+            Skills
+            <span class="badge badge-sm badge-warning">NEW</span>
+          </a>
+        </li>
+        <li>
+          <a href="stats.html">
+            Stats
+            <span class="badge badge-xs badge-info"></span>
+          </a>
+        </li>
+      </ul>
+    </div>
 
     <div class="footer">
-        <footer class="footer p-10 bg-neutral text-neutral-content justify-between">
-            <aside>
-              <svg width="50" height="50" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" class="fill-current"><path d="M22.672 15.226l-2.432.811.841 2.515c.33 1.019-.209 2.127-1.23 2.456-1.15.325-2.148-.321-2.463-1.226l-.84-2.518-5.013 1.677.84 2.517c.391 1.203-.434 2.542-1.831 2.542-.88 0-1.601-.564-1.86-1.314l-.842-2.516-2.431.809c-1.135.328-2.145-.317-2.463-1.229-.329-1.018.211-2.127 1.231-2.456l2.432-.809-1.621-4.823-2.432.808c-1.355.384-2.558-.59-2.558-1.839 0-.817.509-1.582 1.327-1.846l2.433-.809-.842-2.515c-.33-1.02.211-2.129 1.232-2.458 1.02-.329 2.13.209 2.461 1.229l.842 2.515 5.011-1.677-.839-2.517c-.403-1.238.484-2.553 1.843-2.553.819 0 1.585.509 1.85 1.326l.841 2.517 2.431-.81c1.02-.33 2.131.211 2.461 1.229.332 1.018-.21 2.126-1.23 2.456l-2.433.809 1.622 4.823 2.433-.809c1.242-.401 2.557.484 2.557 1.838 0 .819-.51 1.583-1.328 1.847m-8.992-6.428l-5.01 1.675 1.619 4.828 5.011-1.674-1.62-4.829z"></path></svg>
-              <p>Vision Imagine<br>Providing reliable tech since imagination</p>
-            </aside> 
-            <nav>
-              <h6 class="footer-title mr-20">Social</h6> 
-              <div class="grid grid-flow-col gap-4">
-                <a href="https://x.com/mukulgoy8110"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path></svg></a>
+      <footer
+        class="footer p-10 bg-neutral text-neutral-content justify-between"
+      >
+        <aside>
+          <svg
+            width="50"
+            height="50"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            class="fill-current"
+          >
+            <path
+              d="M22.672 15.226l-2.432.811.841 2.515c.33 1.019-.209 2.127-1.23 2.456-1.15.325-2.148-.321-2.463-1.226l-.84-2.518-5.013 1.677.84 2.517c.391 1.203-.434 2.542-1.831 2.542-.88 0-1.601-.564-1.86-1.314l-.842-2.516-2.431.809c-1.135.328-2.145-.317-2.463-1.229-.329-1.018.211-2.127 1.231-2.456l2.432-.809-1.621-4.823-2.432.808c-1.355.384-2.558-.59-2.558-1.839 0-.817.509-1.582 1.327-1.846l2.433-.809-.842-2.515c-.33-1.02.211-2.129 1.232-2.458 1.02-.329 2.13.209 2.461 1.229l.842 2.515 5.011-1.677-.839-2.517c-.403-1.238.484-2.553 1.843-2.553.819 0 1.585.509 1.85 1.326l.841 2.517 2.431-.81c1.02-.33 2.131.211 2.461 1.229.332 1.018-.21 2.126-1.23 2.456l-2.433.809 1.622 4.823 2.433-.809c1.242-.401 2.557.484 2.557 1.838 0 .819-.51 1.583-1.328 1.847m-8.992-6.428l-5.01 1.675 1.619 4.828 5.011-1.674-1.62-4.829z"
+            ></path>
+          </svg>
+          <p>Vision Imagine<br />Providing reliable tech since imagination</p>
+        </aside>
+        <nav>
+          <h6 class="footer-title mr-20">Social</h6>
+          <div class="grid grid-flow-col gap-4">
+            <a href="https://x.com/mukulgoy8110"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                class="fill-current"
+              >
+                <path
+                  d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"
+                ></path></svg
+            ></a>
 
-
-
-                <a href="https://discordapp.com/users/1075101494375890995/"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="fill-current"><path d="M20.317 4.54101C18.7873 3.82774 17.147 3.30224 15.4319 3.00126C15.4007 2.99545 15.3695 3.00997 15.3534 3.039C15.1424 3.4203 14.9087 3.91774 14.7451 4.30873C12.9004 4.02808 11.0652 4.02808 9.25832 4.30873C9.09465 3.90905 8.85248 3.4203 8.64057 3.039C8.62448 3.01094 8.59328 2.99642 8.56205 3.00126C6.84791 3.30128 5.20756 3.82678 3.67693 4.54101C3.66368 4.54681 3.65233 4.5565 3.64479 4.56907C0.533392 9.29283 -0.31895 13.9005 0.0991801 18.451C0.101072 18.4733 0.11337 18.4946 0.130398 18.5081C2.18321 20.0401 4.17171 20.9701 6.12328 21.5866C6.15451 21.5963 6.18761 21.5847 6.20748 21.5585C6.66913 20.9179 7.08064 20.2424 7.43348 19.532C7.4543 19.4904 7.43442 19.441 7.39186 19.4246C6.73913 19.173 6.1176 18.8662 5.51973 18.5178C5.47244 18.4897 5.46865 18.421 5.51216 18.3881C5.63797 18.2923 5.76382 18.1926 5.88396 18.0919C5.90569 18.0736 5.93598 18.0697 5.96153 18.0813C9.88928 19.9036 14.1415 19.9036 18.023 18.0813C18.0485 18.0687 18.0788 18.0726 18.1015 18.091C18.2216 18.1916 18.3475 18.2923 18.4742 18.3881C18.5177 18.421 18.5149 18.4897 18.4676 18.5178C17.8697 18.8729 17.2482 19.173 16.5945 19.4236C16.552 19.4401 16.533 19.4904 16.5538 19.532C16.9143 20.2414 17.3258 20.9169 17.7789 21.5576C17.7978 21.5847 17.8319 21.5963 17.8631 21.5866C19.8241 20.9701 21.8126 20.0401 23.8654 18.5081C23.8834 18.4946 23.8948 18.4742 23.8967 18.452C24.3971 13.1911 23.0585 8.6212 20.3482 4.57004C20.3416 4.5565 20.3303 4.54681 20.317 4.54101ZM8.02002 15.6802C6.8375 15.6802 5.86313 14.577 5.86313 13.222C5.86313 11.8671 6.8186 10.7639 8.02002 10.7639C9.23087 10.7639 10.1958 11.8768 10.1769 13.222C10.1769 14.577 9.22141 15.6802 8.02002 15.6802ZM15.9947 15.6802C14.8123 15.6802 13.8379 14.577 13.8379 13.222C13.8379 11.8671 14.7933 10.7639 15.9947 10.7639C17.2056 10.7639 18.1705 11.8768 18.1516 13.222C18.1516 14.577 17.2056 15.6802 15.9947 15.6802Z"></path></svg></a>
-              </div>
-            </nav>
-          </footer>
+            <a href="https://discordapp.com/users/1075101494375890995/"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                class="fill-current"
+              >
+                <path
+                  d="M20.317 4.54101C18.7873 3.82774 17.147 3.30224 15.4319 3.00126C15.4007 2.99545 15.3695 3.00997 15.3534 3.039C15.1424 3.4203 14.9087 3.91774 14.7451 4.30873C12.9004 4.02808 11.0652 4.02808 9.25832 4.30873C9.09465 3.90905 8.85248 3.4203 8.64057 3.039C8.62448 3.01094 8.59328 2.99642 8.56205 3.00126C6.84791 3.30128 5.20756 3.82678 3.67693 4.54101C3.66368 4.54681 3.65233 4.5565 3.64479 4.56907C0.533392 9.29283 -0.31895 13.9005 0.0991801 18.451C0.101072 18.4733 0.11337 18.4946 0.130398 18.5081C2.18321 20.0401 4.17171 20.9701 6.12328 21.5866C6.15451 21.5963 6.18761 21.5847 6.20748 21.5585C6.66913 20.9179 7.08064 20.2424 7.43348 19.532C7.4543 19.4904 7.43442 19.441 7.39186 19.4246C6.73913 19.173 6.1176 18.8662 5.51973 18.5178C5.47244 18.4897 5.46865 18.421 5.51216 18.3881C5.63797 18.2923 5.76382 18.1926 5.88396 18.0919C5.90569 18.0736 5.93598 18.0697 5.96153 18.0813C9.88928 19.9036 14.1415 19.9036 18.023 18.0813C18.0485 18.0687 18.0788 18.0726 18.1015 18.091C18.2216 18.1916 18.3475 18.2923 18.4742 18.3881C18.5177 18.421 18.5149 18.4897 18.4676 18.5178C17.8697 18.8729 17.2482 19.173 16.5945 19.4236C16.552 19.4401 16.533 19.4904 16.5538 19.532C16.9143 20.2414 17.3258 20.9169 17.7789 21.5576C17.7978 21.5847 17.8319 21.5963 17.8631 21.5866C19.8241 20.9701 21.8126 20.0401 23.8654 18.5081C23.8834 18.4946 23.8948 18.4742 23.8967 18.452C24.3971 13.1911 23.0585 8.6212 20.3482 4.57004C20.3416 4.5565 20.3303 4.54681 20.317 4.54101ZM8.02002 15.6802C6.8375 15.6802 5.86313 14.577 5.86313 13.222C5.86313 11.8671 6.8186 10.7639 8.02002 10.7639C9.23087 10.7639 10.1958 11.8768 10.1769 13.222C10.1769 14.577 9.22141 15.6802 8.02002 15.6802ZM15.9947 15.6802C14.8123 15.6802 13.8379 14.577 13.8379 13.222C13.8379 11.8671 14.7933 10.7639 15.9947 10.7639C17.2056 10.7639 18.1705 11.8768 18.1516 13.222C18.1516 14.577 17.2056 15.6802 15.9947 15.6802Z"
+                ></path></svg
+            ></a>
+          </div>
+        </nav>
+      </footer>
     </div>
 
-</body>
-<script>
-    const coords = { x: 0, y: 0 };
-const circles = document.querySelectorAll(".circle");
+  </body>
 
-const colors = [
-  "#0e035c",
-  "#24066b",
-  "#370a7b",
-  "#4a0f8a",
-  "#5d149a",
-  "#7118a9",
-  "#861cb8",
-  "#9b1fc7",
-  "#b022d5",
-  "#c725e4",
-  "#de27f2",
-  "#f529ff",
+  <script src="particles.js"></script>
+  <script src="app.js"></script>
 
-];
-
-circles.forEach(function (circle, index) {
-  circle.x = 0;
-  circle.y = 0;
-  circle.style.backgroundColor = colors[index % colors.length];
-});
-
-window.addEventListener("mousemove", function(e){
-  coords.x = e.clientX;
-  coords.y = e.clientY;
-  
-});
-
-function animateCircles() {
-  
-  let x = coords.x;
-  let y = coords.y;
-  
-  circles.forEach(function (circle, index) {
-    circle.style.left = x - 12 + "px";
-    circle.style.top = y - 12 + "px";
-    
-    circle.style.scale = (circles.length - index) / circles.length;
-    
-    circle.x = x;
-    circle.y = y;
-
-    const nextCircle = circles[index + 1] || circles[0];
-    x += (nextCircle.x - x) * 0.3;
-    y += (nextCircle.y - y) * 0.3;
-  });
- 
-  requestAnimationFrame(animateCircles);
-}
-
-animateCircles();
-
-
-
-</script>
 </html>
