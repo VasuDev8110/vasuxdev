@@ -3,7 +3,7 @@ module.exports = {
   content: ["*.html"],
   theme: {
     fontFamily: {
-      'mono': ["JetBrains Mono", monospace],
+      'mono': ["JetBrains Mono"],
     },
     extend: {},
   },
